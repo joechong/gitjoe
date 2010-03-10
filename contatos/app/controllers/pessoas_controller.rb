@@ -44,7 +44,7 @@ class PessoasController < ApplicationController
 
     respond_to do |format|
       if @pessoa.save
-        flash[:notice] = 'Pessoa was successfully created.'
+        flash[:notice] = 'Pessoa adicionado com sucesso.'
         format.html { redirect_to(@pessoa) }
         format.xml  { render :xml => @pessoa, :status => :created, :location => @pessoa }
       else
